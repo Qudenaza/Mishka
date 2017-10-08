@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин мягких игрушек «Mishka»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="user-nav user-nav--closed user-nav--nojs">
+      <a class="user-nav__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <button class="user-nav__toogle" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <div class="user-nav__wrapper">
+        <ul class="user-nav__list">
+          <li class="user-nav__item user-nav__item--border"><a href="#">Каталог товаров</a></li>
+          <li class="user-nav__item"><a href="#">Вязание на заказ</a></li>
+        </ul>
+        <ul class="user-nav__user-block user-block">
+          <li class="user-nav__item user-nav__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина: <span class="user-block__basket">пока пуста</span></a></li>
+        </ul>
+        <span class="user-nav__free-delivery">Бесплатная доставка по России</span>
+      </div>
+    </nav>
+    <div class="main-header__entrance">
+      <h1 class="main-header__title">Милые штуки<br> ручной<br> работы для дома</h1>
+      <ul class="main-header__list">
+        <li class="main-header__item main-header__item--interior"><a href="#">Предметы интерьера</a></li>
+        <li class="main-header__item main-header__item--toys"><a href="#">Детские игрушки</a></li>
+      </ul>
+    </div>
+  </header>
+  <script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

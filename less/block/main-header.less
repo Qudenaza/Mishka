@@ -1,0 +1,110 @@
+.main-header {
+  width: 100%;
+  &__entrance {
+    width: 100%;
+    padding-top: 87px;
+    background: url("../img/bg-mobile@1x.jpg") no-repeat,
+                #f9f9f9;
+    background-position: center top;
+    border-top: 1px solid #ececec;
+  }
+  &__title {
+    width: 320px;
+    padding: 0 30px;
+    margin: 0 auto;
+    color: #231f20;
+    font-family: "Verdana", "Tahoma", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__list {
+    .list();
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 125px;
+  }
+  &__item {
+    padding-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    &:hover {
+      padding-top: 29px;
+      margin-top: -5px;
+      cursor: pointer;
+      & a {
+        transform: translateY(-5px);
+      }
+    }
+    &:active a {
+      opacity: 0.3;
+    }
+    &--interior {
+      background: url("../img/icon-interior.svg") no-repeat 87%,
+                  #63d1bb;
+    }
+    &--toys {
+      background: url("../img/icon-toy.svg") no-repeat 90%,
+                  #56c3b2;
+    }
+  }
+  &__item a {
+    display: block;
+    width: 100px;
+    font-family: "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    &__entrance {
+      position: relative;
+      padding-top: 150px;
+      background: url("../img/bg-tablet@1x.jpg") no-repeat center top,
+                  #f9f9f9;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        background: url("../img/zigzag-fill.svg") repeat-x;
+        background-size: auto 24px;
+      }
+    }
+    &__title {
+      width: 670px;
+      padding: 0 50px;
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      & br {
+        display: none;
+      }
+    }
+    &__list {
+      display: flex;
+      width: 668px;
+      margin: 0 auto;
+      margin-top: 376px;
+    }
+    &__item {
+      padding-left: 34px;
+      padding-top: 27px;
+      width: 50%;
+      & a {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &--toys {
+        background-position: 88%;
+      }
+    }
+  }
+
+}
