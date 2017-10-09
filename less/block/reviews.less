@@ -1,0 +1,158 @@
+.reviews {
+  padding-top: 60px;
+  &__title {
+    width: 260px;
+    padding: 0 30px;
+    margin: 0 auto;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 24px;
+  }
+  &__wrapper {
+    width: 260px;
+    padding: 27px 30px;
+    margin: 0 auto;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #444444;
+  }
+  &__author {
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  &__nickname {
+    font-size: 14px;
+    line-height: 30px;
+    color: #444444;
+  }
+  &__controlers {
+    display: flex;
+    width: 260px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  &__btn {
+    width: 50%;
+    height: 52px;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &--left {
+      background: url("../img/icon-left-arrow.svg") no-repeat 50%;
+    }
+    &--right {
+      background: url("../img/icon-right-arrow.svg") no-repeat 50%;
+    }
+  }
+  &__write-us {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 16px 10px;
+    box-sizing: border-box;
+    border: 2px solid #444444;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none;
+    color: #444444;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #ffffff;
+      background: #444444;
+      transition: 0.4s;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 62px;
+    position: relative;
+    margin-top: 85px;
+    background: url("../img/review@1x.jpg") no-repeat;
+    &__title {
+      margin-top: 15px;
+      margin-left: -35px;
+      font-size: 40px;
+    }
+    &__wrapper {
+      width: 100%;
+      padding: 0;
+    }
+    &__text {
+      margin-top: 53px;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    &__author {
+      display: block;
+      font-size: 16px;
+    }
+    &__nickname {
+      font-size: 16px;
+    }
+    &__write-us {
+      position: absolute;
+      top: 38px;
+      right: 50px;
+      width: 175px;
+    }
+    &__controlers {
+      width: 180px;
+      margin-right: -32px;
+      margin-top: -54px;
+    }
+    &__btn {
+      border: none;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1050px;
+    padding: 0;
+    padding-bottom: 97px;
+    padding-top: 56px;
+    &__title {
+      margin-left: 140px;
+      font-size: 50px;
+    }
+    &__wrapper {
+      box-sizing: border-box;
+      padding: 0 175px;
+    }
+    &__write-us {
+      right: 0;
+      top: 42px;
+    }
+    &__text {
+      margin-top: 50px;
+    }
+  }
+}

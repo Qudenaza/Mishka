@@ -106,5 +106,32 @@
       }
     }
   }
+}
 
+@media (min-width: @desktop-width) {
+  .main-header {
+    &__title {
+      font-size: 50px;
+      line-height: 57px;
+    }
+    &__entrance {
+      &::after {
+        background-size: auto 32px;
+        height: 14px;
+      }
+    }
+    &__list {
+      width: 1050px;
+      margin-top: 362px;
+    }
+    &__item {
+      padding-left: 37px;
+      &--toys {
+        background-position: 92%;
+      }
+      &--interior {
+        background-position: 92%;
+      }
+    }
+  }
 }
