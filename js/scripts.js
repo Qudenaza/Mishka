@@ -13,3 +13,25 @@ navToggle.addEventListener("click", function() {
     navMain.classList.remove("user-nav--opened");
   }
 });
+
+
+var map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 59.9392266,
+      lng: 30.32287000
+    },
+    zoom: 16
+  });
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 59.9385365,
+      lng: 30.32291472
+    },
+    map: map,
+    title: "Наш маркер",
+    icon: "../img/icon-map-pin.svg"
+  });
+}

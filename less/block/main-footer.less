@@ -1,0 +1,145 @@
+.main-footer {
+  margin-top: 40px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background: #f1f1f1;
+  &__wrapper {
+    width: 260px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__social {
+    &:active {
+      opacity: 0.3;
+    }
+    &--insta {
+      width: 22px;
+      height: 21px;
+      margin: 4px 42px 0 57px;
+      background: url("../img/icon-insta.svg") no-repeat;
+      &:hover {
+        background: url("../img/icon-insta-hover.svg") no-repeat;
+      }
+    }
+    &--tw {
+      width: 23px;
+      height: 20px;
+      margin: 4px 0 0 40px;
+      background: url("../img/icon-tw.svg") no-repeat;
+      &:hover {
+        background: url("../img/icon-tw-hover.svg") no-repeat;
+      }
+    }
+    &--fb {
+      width: 15px;
+      height: 30px;
+      background: url("../img/icon-fb.svg") no-repeat;
+      &:hover {
+        background: url("../img/icon-fb-hover.svg") no-repeat;
+      }
+    }
+  }
+  &__authors {
+    display: flex;
+    margin-top: 23px;
+  }
+  &__text {
+    margin-left: 37px;
+    margin-top: 2px;
+    margin-right: 20px;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-weight: 700;
+  }
+  &__htmlacademy {
+    display: block;
+    width: 40px;
+    height: 35px;
+    margin-top: -3px;
+    cursor: pointer;
+    &:active {
+      opacity: 0.3;
+    }
+    & path:hover {
+      fill: #46c1ae;
+    }
+  }
+  &__logo {
+    display: none;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    margin-top: 58px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 668px;
+      padding: 0 50px;
+    }
+    &__socials {
+      margin-left: 60px;
+      margin-top: 32px;
+      border: none;
+    }
+    &__logo {
+      display: block;
+      margin-top: 28px;
+      &:active {
+        opacity: 0.3;
+      }
+      & svg:hover {
+        fill: #46c1ae;
+      }
+    }
+    &__authors {
+      margin-top: 37px;
+    }
+    &__text {
+      margin-right: 18px;
+    }
+    &__htmlacademy {
+      margin-right: -6px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    margin-top: 104px;
+    padding-bottom: 30px;
+    &__wrapper {
+      width: 1050px;
+    }
+    &__socials {
+      margin-left: 60px;
+      margin-top: 32px;
+      border: none;
+    }
+    &__logo {
+      display: block;
+      &:active {
+        opacity: 0.3;
+      }
+      & svg:hover {
+        fill: #46c1ae;
+      }
+    }
+    &__authors {
+      margin-top: 37px;
+    }
+    &__text {
+      margin-right: 18px;
+    }
+    &__htmlacademy {
+      margin-right: -6px;
+    }
+  }
+}
