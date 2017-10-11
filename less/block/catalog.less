@@ -1,0 +1,128 @@
+.catalog {
+  &__wrapper {
+    width: 260px;
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  &__item {
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ededed;
+    cursor: pointer;
+    &:hover {
+      -webkit-box-shadow: 0px 6px 7px 0px rgba(234,233,231,1);
+      -moz-box-shadow: 0px 6px 7px 0px rgba(234,233,231,1);
+      box-shadow: 0px 6px 7px 0px rgba(234,233,231,1)
+    }
+    &:active {
+      -webkit-box-shadow: 0px 5px 3px 0px rgba(234,233,231,1);
+      -moz-box-shadow: 0px 5px 3px 0px rgba(234,233,231,1);
+      box-shadow: 0px 5px 3px 0px rgba(234,233,231,1);
+    }
+  }
+  &__container {
+    padding: 0 28px;
+  }
+  &__title {
+    margin: 24px 0 8px 0;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &__info {
+    font-size: 14px;
+  }
+  &__price {
+    display: block;
+    margin-top: 26px;
+    padding-top: 26px;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 14px;
+    background: url("../img/icon-basket.svg") no-repeat right bottom;
+    border-top: 1px solid #ececec;
+    &:hover {
+      opacity: 0.6;
+      background: url("../img/icon-basket-hover.svg") no-repeat right bottom;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    &__wrapper {
+      width: 668px;
+      margin: 0 auto;
+      margin-top: 68px;
+    }
+    &__container {
+      width: 275px;
+      padding: 0;
+      padding-left: 27px;
+    }
+    &__item {
+      display: flex;
+      width: 668px;
+      padding-bottom: 0;
+      margin-bottom: 48px;
+    }
+    &__title {
+      font-size: 18px;
+
+    }
+    &__info {
+      font-size: 15px;
+    }
+    &__price {
+      font-size: 16px;
+      margin-top: 180px;
+      margin-left: 4px;
+      &--margin {
+        margin-top: 158px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 1050px;
+      padding: 0 50px;
+      margin: 0 auto;
+      margin-top: 112px;
+      margin-bottom: 8px;
+    }
+    &__item {
+      display: block;
+      max-width: 317px;
+      padding-bottom: 30px;
+    }
+    &__image {
+      display: block;
+    }
+    &__price {
+      width: 255px;
+      font-size: 16px;
+      margin-top: 43px;
+      margin-left: 0;
+      &--margin {
+        margin-top: 20px;
+      }
+    }
+  }
+}

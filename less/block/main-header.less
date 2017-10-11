@@ -1,5 +1,10 @@
 .main-header {
   width: 100%;
+  &__footer {
+    width: 100%;
+    padding: 72px 0 75px 0;
+    background: #f1f1f1;
+  }
   &__entrance {
     width: 100%;
     padding-top: 87px;
@@ -62,6 +67,15 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
+    &__footer {
+      width: 100%;
+      height: 12px;
+      padding-top: 92px;
+      padding-bottom: 135px;
+      background: url("../img/zigzag-fill.svg") repeat-x bottom,
+                  #f1f1f1;
+      background-size: auto 24px;
+    }
     &__entrance {
       position: relative;
       padding-top: 150px;
@@ -110,6 +124,11 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
+    &__footer {
+      padding-bottom: 160px;
+      height: 20px;
+      background-size: auto 30px;
+    }
     &__title {
       font-size: 50px;
       line-height: 57px;
