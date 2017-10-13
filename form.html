@@ -23,8 +23,8 @@
       </button>
       <div class="user-nav__wrapper">
         <ul class="user-nav__list">
-          <li class="user-nav__item user-nav__item--border"><a href="#">Каталог товаров</a></li>
-          <li class="user-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="user-nav__item user-nav__item--border"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="user-nav__item"><a>Вязание на заказ</a></li>
         </ul>
         <ul class="user-nav__list--desktop-only">
           <li class="user-nav__item"><a href="#">Новые поступления</a></li>
@@ -38,64 +38,104 @@
       </div>
     </nav>
     <div class="main-header__footer">
-      <h1 class="main-header__title">Каталог товаров</h1>
+      <h1 class="main-header__title">Вязание на заказ</h1>
     </div>
   </header>
   <main class="main-content">
-    <section class="catalog">
-      <h2 class="visually-hidden">Наши товары</h2>
-      <div class="catalog__wrapper">
-        <section class="catalog__item">
-          <picture class="catalog__image">
-            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-            <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик попрыгайчик">
-          </picture>
-          <div class="catalog__container">
-            <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
-            <span class="catalog__info">Рост 30 см, вес 200 г</span>
-            <b class="catalog__price">1 200 руб.</b>
+    <section class="form">
+      <h2 class="visually-hidden">Заполните форму</h2>
+      <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания!<br>
+      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form__form" action="#" method="post">
+        <div class="form__type">
+          <b class="form__title form__title--type">Тип</b>
+          <label for="interior">
+            <input type="radio" name="type" value="interior" id="interior" checked>
+            <span class="form__control-indicator--radio"></span>
+            Аксессуар для<br> интерьера
+          </label>
+          <label for="toy">
+            <input type="radio" name="type" value="toy" id="toy">
+            <span class="form__control-indicator--radio"></span>
+            Детская игрушка
+           </label>
+        </div>
+        <div class="form__color">
+          <div class="form__wrapper">
+            <b class="form__title form__title--color">Цвет</b>
+            <div class="form__container">
+              <label for="white">
+                <input type="checkbox" name="color" value="white" id="white" checked>
+                <span class="form__control-indicator--color"></span>
+                Белый
+              </label>
+              <label for="grey">
+                <input type="checkbox" name="color" value="grey" id="grey" checked>
+                <span class="form__control-indicator--color"></span>
+                Серый
+              </label>
+              <label for="tiffany">
+                <input type="checkbox" name="color" value="tiffany" id="tiffany">
+                <span class="form__control-indicator--color"></span>
+                «Тиффани»
+              </label>
+              <label for="black">
+                <input type="checkbox" name="color" value="black" id="black">
+                <span class="form__control-indicator--color"></span>
+                Черный
+              </label>
+              <label for="pink">
+                <input type="checkbox" name="color" value="pink" id="pink">
+                <span class="form__control-indicator--color"></span>
+                Розовый
+              </label>
+              <label for="orange">
+                <input type="checkbox" name="color" value="orange" id="orange">
+                <span class="form__control-indicator--color"></span>
+                Оранжевый
+              </label>
+            </div>
           </div>
-        </section>
-        <section class="catalog__item">
-          <picture class="catalog__image">
-            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-            <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
-          </picture>
-          <div class="catalog__container">
-            <h3 class="catalog__title">Корзинка для белья</h3>
-            <span class="catalog__info">Диаметр 15 см, высота 10 см</span>
-            <b class="catalog__price">690 руб.</b>
+        </div>
+
+        <div class="form__name">
+          <b class="form__title form__title--name">ФИО</b>
+          <div class="form__name--wrapper">
+            <div class="form__name--container">
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" placeholder="Укажите фамилию" id="surname">
+            </div>
+            <div class="form__name--container">
+              <label for="name">Имя:</label>
+              <input type="text" name="name" placeholder="Введите ваше имя" id="name">
+            </div>
+            <div class="form__name--container">
+              <label for="fathername">Отчество:</label>
+              <input type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+            </div>
           </div>
-        </section>
-        <section class="catalog__item">
-          <picture class="catalog__image">
-            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-            <img src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для игрушек">
-          </picture>
-          <div class="catalog__container">
-            <h3 class="catalog__title">Большая корзинка для игрушек</h3>
-            <span class="catalog__info">Диаметр 30 см, высота 30 см</span>
-            <b class="catalog__price catalog__price--margin">1 500 руб.</b>
+        </div>
+
+        <div class="form__contacts">
+          <div class="form__contacts--wrapper">
+            <div class="form__tel">
+              <b class="form__title form__title--tel">Тел</b>
+              <input type="text" name="number" placeholder="+7 XXX XX XX">
+            </div>
+            <div class="form__email">
+              <b class="form__title form__title--email">E-Mail</b>
+              <input type="text" name="email" placeholder="Ваш e-mail">
+            </div>
           </div>
-        </section>
-      </div>
-    </section>
-    <section class="video">
-      <h3 class="video__title">Процесс<br> производства</h3>
-      <div class="video__image">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-          <img src="img/video-mobile@1x.jpg" alt="Процесс производства">
-        </picture>
-      </div>
-      <div class="video__wrapper">
-        <p class="video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="video__btn" href="#">Сделать заказ</a>
-      </div>
+        </div>
+
+        <div class="form__addition">
+          <b class="form__title form__title--addition">Доп</b>
+          <textarea class="form__textarea" name="addition" id="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <button class="form__btn" type="submit">Отправить заказ</button>
+          <span class="form__explanetion">Все поля являются обязательными</span>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="main-footer">

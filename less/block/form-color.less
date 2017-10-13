@@ -1,0 +1,127 @@
+.form {
+  &__color {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 38px;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__title {
+    &--color {
+      margin-bottom: 26px;
+    }
+  }
+  &__control-indicator {
+    &--color {
+      position: relative;
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin-right: 20px;
+      margin-bottom: 2px;
+      border: 2px solid #444444;
+      cursor: pointer;
+      &:hover {
+        border-color: #62d1ba;
+      }
+      &:active {
+        border-color: #c7c7c7;
+      }
+    }
+  }
+}
+
+input[type="checkbox"]:checked + .form__control-indicator--color::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  width: 21px;
+  height: 17px;
+  background: url("../img/icon-form-yes.svg") no-repeat 50%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form {
+    &__color {
+      width: 100%;
+      padding-bottom: 40px;
+      background: #f1f1f1;
+    }
+    &__title {
+      &--color {
+        margin-top: 95px;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      width: 668px;
+      margin: 0 auto;
+    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 480px;
+      margin-left: 128px;
+      padding-top: 77px;
+      & label {
+        font-size: 18px;
+        &:nth-child(2) {
+          margin-left: 115px;
+        }
+        &:nth-child(4) {
+          margin-left: 54px;
+        }
+        &:nth-child(6) {
+          margin-left: 92px;
+        }
+      }
+    }
+    &__control-indicator {
+      &--color {
+        width: 48px;
+        height: 48px;
+        margin-right: 27px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+
+  input[type="checkbox"]:checked + .form__control-indicator--color::before {
+    top: 12px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    background-size: 28px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form {
+    &__wrapper {
+      width: 1050px;
+    }
+    &__title {
+      &--color {
+        margin-left: 62px;
+      }
+    }
+    &__container {
+      width: 740px;
+      margin-left: 74px;
+      & label {
+        &:nth-child(4) {
+          margin-left: 0;
+          margin-right: 102px;
+        }
+        &:nth-child(2) {
+          margin-right: 114px;
+        }
+      }
+    }
+  }
+}
